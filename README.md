@@ -20,5 +20,5 @@ Uma aplicação web frontend simples que consulta a Pokédex pública para exibi
 2. Abra o arquivo `index.html` diretamente em seu navegador web.
 
 ## Links
-- **Aplicação no ar (GitHub Pages):** https://SEU_USUARIO.github.io/bootcamp2-app/
-- **Repositório:** https://github.com/SEU_USUARIO/bootcamp2-app
+- **Aplicação no ar (GitHub Pages):** https://rafaelelmiroo.github.io/bootcamp2-app/
+- **Repositório:** https://github.com/rafaelelmiroo/bootcamp2-app
