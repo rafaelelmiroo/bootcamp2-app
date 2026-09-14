@@ -1,0 +1,117 @@
+:root {
+  --primary-color: #ef5350;
+  --bg-color: #f4f6f8;
+  --card-bg: #ffffff;
+  --text-color: #333333;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 450px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#campo-busca {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+#campo-busca:focus {
+  border-color: var(--primary-color);
+}
+
+#botao-buscar {
+  padding: 12px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#botao-buscar:hover {
+  background-color: #d32f2f;
+}
+
+.result-box {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.pokemon-card h2 {
+  text-transform: capitalize;
+  margin: 10px 0 5px 0;
+}
+
+.pokemon-card .id-tag {
+  color: #777;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.details {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.error-msg {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.initial-msg {
+  color: #666;
+}
