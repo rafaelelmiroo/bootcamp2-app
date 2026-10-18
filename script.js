@@ -1,6 +1,6 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
-const SUPABASE_URL = "https://vkkgalgjmyvbkswtxvqv.supabase.co/rest/v1/time_pokemon";
+const SUPABASE_URL = 'https://vkkgalgjmyvbkswtxvqv.supabase.co';
 const SUPABASE_KEY = "sb_publishable_BVvLztDbI5lvcl5XDF1f6Q_fZ_9r2HE";
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
@@ -26,7 +26,7 @@ async function listarFavoritos() {
   const { data, error } = await supabase
     .from("time_pokemon")
     .select("*")
-    .order("criado_em", { ascending: false });
+    .order("created_at", { ascending: false });
 
   if (error) {
     console.error("Erro ao buscar time:", error);
