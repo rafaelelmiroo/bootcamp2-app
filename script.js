@@ -1,7 +1,7 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 const SUPABASE_URL = "https://vkkgalgjmyvbkswtxvqv.supabase.co/rest/v1/time_pokemon";
-const SUPABASE_KEY = "eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZra2dhbGdqbXl2Ymtzd3R4dnF2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIyODI0NDcsImV4cCI6MjEwNzg1ODQ0N30";
+const SUPABASE_KEY = "sb_publishable_BVvLztDbI5lvcl5XDF1f6Q_fZ_9r2HE";
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
 // --- FUNÇÕES CRUD DO SUPABASE ---
