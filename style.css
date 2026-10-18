@@ -24,17 +24,17 @@ body {
 
 header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 header h1 {
   color: var(--primary-color);
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 .container {
   width: 100%;
-  max-width: 450px;
+  max-width: 500px;
 }
 
 .search-box {
@@ -56,8 +56,8 @@ header h1 {
   border-color: var(--primary-color);
 }
 
-#botao-buscar {
-  padding: 12px 20px;
+#botao-buscar, .btn-add, .btn-del {
+  padding: 10px 16px;
   background-color: var(--primary-color);
   color: #fff;
   border: none;
@@ -67,51 +67,83 @@ header h1 {
   transition: background-color 0.2s;
 }
 
-#botao-buscar:hover {
+#botao-buscar:hover, .btn-add:hover {
   background-color: #d32f2f;
+}
+
+.btn-del {
+  background-color: #757575;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.btn-del:hover {
+  background-color: #424242;
 }
 
 .result-box {
   background: var(--card-bg);
   border-radius: 12px;
-  padding: 25px;
+  padding: 20px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  min-height: 200px;
+  min-height: 180px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .pokemon-card img {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   object-fit: contain;
 }
 
 .pokemon-card h2 {
   text-transform: capitalize;
-  margin: 10px 0 5px 0;
-}
-
-.pokemon-card .id-tag {
-  color: #777;
-  font-size: 0.9rem;
-  font-weight: bold;
+  margin: 5px 0;
 }
 
 .details {
-  margin-top: 15px;
-  font-size: 0.95rem;
-  line-height: 1.5;
+  margin: 10px 0;
+  font-size: 0.9rem;
 }
 
-.error-msg {
+.team-section {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  text-align: center;
   color: var(--primary-color);
-  font-weight: bold;
 }
 
-.initial-msg {
-  color: #666;
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 10px;
 }
+
+.team-card {
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  background: #fafafa;
+}
+
+.team-card h4 {
+  text-transform: capitalize;
+  font-size: 0.95rem;
+}
+
+.error-msg { color: var(--primary-color); font-weight: bold; }
+.initial-msg { color: #666; }
